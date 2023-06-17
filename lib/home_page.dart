@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_chart_test/chart_screen/bar_chart.dart';
 import 'package:flutter_chart_test/chart_screen/pie_chart.dart';
-import 'package:flutter_chart_test/model.dart';
+import 'package:flutter_chart_test/chart_list_model.dart';
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
 
@@ -13,7 +14,7 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Chart Collection"),),
+      appBar: AppBar(title: Text("Chart Collection"),centerTitle: true, backgroundColor: Colors.green,),
       body: Container(
         
         child:ListView.builder(
@@ -25,6 +26,10 @@ class _HomeScreenState extends State<HomeScreen> {
               switch(index){
                 case 0: Navigator.of(context).push(MaterialPageRoute(builder: (_)=>PieChartScreen()));
               }
+              switch(index){
+                case 1: Navigator.of(context).push(MaterialPageRoute(builder: (_)=>BarChartScreen()));
+              }
+
 
             },
             child: Padding(

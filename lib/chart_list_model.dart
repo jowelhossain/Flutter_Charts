@@ -14,13 +14,10 @@ List<ChartList> chartList=[
   iconData: Icons.pie_chart,
 
   ),
-  ChartList(chartName: "Pie Chart",
-  iconData: Icons.pie_chart,
+  ChartList(chartName: "Bar Chart",
+  iconData: Icons.bar_chart,
 
   ),
-  ChartList(chartName: "Pie Chart",
-  iconData: Icons.pie_chart,
 
-  )
 
 ];

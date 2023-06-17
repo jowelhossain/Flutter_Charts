@@ -18,7 +18,7 @@ class _PieChartScreenState extends State<PieChartScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-appBar: AppBar(title: Text("Pie Chart"),centerTitle: true,),
+appBar: AppBar(title: Text("Pie Chart"),centerTitle: true,backgroundColor: Colors.green,),
 
       body:Container(
         padding: EdgeInsets.all(5),
