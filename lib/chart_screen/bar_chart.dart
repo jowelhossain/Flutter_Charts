@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:charts_flutter/flutter.dart' as charts;
 
-import 'bar_chart_model.dart';
+import '../model_file/bar_chart_model.dart';
 
 class BarChartScreen extends StatefulWidget {
   const BarChartScreen({Key? key}) : super(key: key);

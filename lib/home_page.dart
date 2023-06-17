@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_chart_test/chart_screen/bar_chart.dart';
 import 'package:flutter_chart_test/chart_screen/pie_chart.dart';
-import 'package:flutter_chart_test/chart_list_model.dart';
+import 'package:flutter_chart_test/model_file/chart_list_model.dart';
+
+import 'chart_screen/line_chart.dart';
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
 
@@ -28,6 +30,9 @@ class _HomeScreenState extends State<HomeScreen> {
               }
               switch(index){
                 case 1: Navigator.of(context).push(MaterialPageRoute(builder: (_)=>BarChartScreen()));
+              }
+              switch(index){
+                case 2: Navigator.of(context).push(MaterialPageRoute(builder: (_)=>LineChartScreen()));
               }
 
 

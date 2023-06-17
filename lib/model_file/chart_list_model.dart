@@ -18,6 +18,10 @@ List<ChartList> chartList=[
   iconData: Icons.bar_chart,
 
   ),
+  ChartList(chartName: "Line Chart",
+  iconData: Icons.stacked_line_chart,
+
+  ),
 
 
 ];
